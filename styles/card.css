@@ -1,0 +1,125 @@
+@charset "UTF-08";
+
+ .card {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--background--primario);
+    padding: 23px;
+    border-radius: 10px;
+ }
+
+.card__descricao {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__descricao__texto {
+    display: block;
+    width: 60%;
+}
+
+.card__subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 8px 0px;
+
+    color: var(--destaque);
+}
+
+.card__titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 8px 0px;
+
+    color: var(--degrade--primario);
+}
+
+.card__paragrafo {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 8px 0px;
+
+    padding-bottom: 35px;
+
+    color: var(--fonte);
+}
+
+.card__botoes__mais {
+    padding-top: 60px;
+}
+
+.card__botoes__itens__mais{
+    display: block;
+    background-color: var(--destaque);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background--primario);
+
+    padding: 12px 16px;
+}
+
+.card__botoes__itens__mais:hover {
+    border: 3px solid var(--destaque);
+    background-color: var(--background--primario);
+    color: var(--destaque);
+    transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .card {
+        width: 50%;
+    }
+
+    .card__botoes__mais {
+        padding-top: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .card {
+        width: 50%;
+    }
+
+    .card__descricao {
+        gap: 5px;
+    }
+
+    .card__subtitulo {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .card__titulo{
+        font-size: 18px;
+    }
+
+    .card__paragrafo {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+}
